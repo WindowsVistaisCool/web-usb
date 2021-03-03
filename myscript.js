@@ -15,11 +15,12 @@ document.addEventListener('DOMContentLoaded', event => {
   cvendor.addEventListener('click', async() => {
     var newID = window.prompt("enter new ID (---- format w/ no 0x):")
     if (newID == null) {
-	alert("invalid id")
 	return
     }
     var newerID = parseInt(newID, 10)
-    vndrID = newerID
+    var hex = 0x0000
+    hex = hex + newerID
+    vndrID = hex
     alert("changed vendor id to: " + vndrID)
   })
   button.addEventListener('click', async() => {
