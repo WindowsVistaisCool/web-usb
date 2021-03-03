@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', event => {
   
   cvendor.addEventListener('click', async() => {
     var newID = window.prompt("enter new ID (---- format w/ no 0x):")
-    alert("changed vendor id to" + newID)
+    alert("changed vendor id to: " + newID)
     var newerID = parseInt(newID, 10)
     VENDOR_ID = newerID
   })
