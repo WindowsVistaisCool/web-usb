@@ -5,7 +5,7 @@
     <script src="myscript.js"></script>
   </head>
   <body>
-    <p>for the connect button to work, you will need to use a sandisk drive (vendorid = 0x0781)<br>some don't work for some reason, i'm not sure why<br>you can see information in the JS console (Ctrl + Shift + I)<br>I'm pretty sure this doesn't work on firefox/safari but who knows</p>
+    <p>for the connect button to work, you will need to use the correct vendor id (default is 0781)<br>you can see information in the JS console (Ctrl + Shift + I) about a drive after you connect it<br>I'm pretty sure this doesn't work on firefox/safari<br>you can change the vendor ID to match your drive<br>look up lsusb(linux) or others for your operating system (google: how to find vendor id [operating system])</p>
     <button id="connect">Connect USB</button>
     <button id="changeID">Change Vendor ID</button>
   </body>
