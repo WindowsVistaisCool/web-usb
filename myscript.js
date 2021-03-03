@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', event => {
 	return
     }
     var newerID = parseInt(newID, 10)
-    var hex = 0x0000
+    var hex = 0x1111
     hex = hex + newerID
-    vndrID = hex
+    vndrID = hex - 1111
     alert("changed vendor id to: " + vndrID)
   })
   button.addEventListener('click', async() => {
